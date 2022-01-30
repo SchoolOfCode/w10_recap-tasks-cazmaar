@@ -3,6 +3,7 @@ import Button from "../Button";
 import PageHeader from "../PageHeader";
 import Paragraph from "../Paragraph";
 import Comment from "../Comment";
+import ParagraphTitle from "../ParagraphTitle";
 
 function Display() {
   return (
@@ -10,7 +11,7 @@ function Display() {
       {articles.map((article) => {
         return (
           <div key={article.id}>
-            <PageHeader heading={article.title} />
+            <ParagraphTitle title={article.title} />
             {article.paragraphs.map((paragraph) => {
               return <Paragraph key={paragraph.id} text={paragraph.text} />;
             })}

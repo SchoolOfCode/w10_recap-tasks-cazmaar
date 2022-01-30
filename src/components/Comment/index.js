@@ -1,10 +1,11 @@
 import React from "react";
+import css from "./comment.module.css";
 
-function Comment({name, text}) {
+function Comment({ name, text }) {
   return (
     <div>
-      <p>{name} Says:</p>
-      <p>{text}</p>
+      <p className={css.comment}>{name} Says:</p>
+      <p className={css.comment}>{text}</p>
     </div>
   );
 }

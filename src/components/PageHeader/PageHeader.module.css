@@ -1,0 +1,10 @@
+.header {
+  text-align: center;
+  color: darkblue;
+  font-weight: 900;
+  background-color: white;
+  border-radius: 2rem;
+  padding: 1rem;
+ width: 50%;
+ margin-left: 25%;
+}
