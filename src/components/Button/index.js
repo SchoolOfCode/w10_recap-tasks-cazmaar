@@ -1,10 +1,21 @@
 import React from "react";
-import css from "./button.module.css"
+import css from "./button.module.css";
+import { useState } from "react";
 
 function Button() {
+  const [likes, setLikes] = useState(0);
+
+  function AddLikes() {
+    let count = likes;
+    count += 1;
+    setLikes(count);
+  }
+
   return (
     <div>
-      <button className={css.likeButton}>Like 👍</button>
+      <button onClick={AddLikes} className={css.likeButton}>
+        {likes} Likes 👍
+      </button>
     </div>
   );
 }

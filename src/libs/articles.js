@@ -37,7 +37,7 @@ const articles = [
       { id: 0, name: "Loz", text: "Interesting..." },
       { id: 1, name: "Liz", text: "Neato!" },
       { id: 2, name: "Hamza", text: "Great read." },
-      { id: 2, name: "Kazeem", text: "Interesting Read" }
+      { id: 3, name: "Kazeem", text: "Interesting Read" }
     ],
   },
   {
