@@ -2,8 +2,9 @@ import articles from "../../libs/articles";
 import Button from "../Button";
 import PageHeader from "../PageHeader";
 import Paragraph from "../Paragraph";
+import Comment from "../Comment";
 
-function DisplayParagraph() {
+function Display() {
   return (
     <section>
       {articles.map((article) => {
@@ -14,10 +15,13 @@ function DisplayParagraph() {
               return <Paragraph key={paragraph.id} text={paragraph.text} />;
             })}
             <Button />
+            {article.comments.map((comment) => {
+              return <Comment key={comment.id} name={comment.name} text={comment.text} />;
+            })}
           </div>
         );
       })}
     </section>
   );
 }
-export default DisplayParagraph;
+export default Display;

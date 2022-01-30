@@ -1,12 +1,13 @@
 import "./App.css";
 import PageHeader from "../PageHeader";
-import DisplayParagraph from "../DisplayParagraph";
+import Display from "../Display";
+
 
 function App() {
   return (
     <main className="App">
       <PageHeader heading="WikiPigeon" />
-      <DisplayParagraph />
+      <Display />
     </main>
   );
 }
