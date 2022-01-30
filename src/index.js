@@ -5,13 +5,14 @@ import App from "./components/App";
 import reportWebVitals from "./reportWebVitals";
 import { Auth0Provider } from "@auth0/auth0-react";
 import { BrowserRouter } from "react-router-dom";
-
+const domain = process.env.REACT_APP_DOMAIN;
+const clientId = process.env.REACT_APP_CLIENT_ID;
 
 ReactDOM.render(
   <React.StrictMode>
     <Auth0Provider
-      domain="dev-jpr90dts.us.auth0.com"
-      clientId="Q5XIUqYFQBfSbecBfa4f9LgkZ79rIdW6"
+      domain={domain}
+      clientId={clientId}
       redirectUri="http://localhost:3000/article"
     >
       <BrowserRouter>
