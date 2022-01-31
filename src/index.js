@@ -8,13 +8,12 @@ import { BrowserRouter } from "react-router-dom";
 const domain = process.env.REACT_APP_DOMAIN;
 const clientId = process.env.REACT_APP_CLIENT_ID;
 
-
 ReactDOM.render(
   <React.StrictMode>
     <Auth0Provider
       domain={domain}
       clientId={clientId}
-      redirectUri="http://localhost:3000/article"
+      redirectUri="https://awesome-kepler-57ad1d.netlify.app/article"
     >
       <BrowserRouter>
         <App />
