@@ -4,8 +4,12 @@ import css from "./comment.module.css";
 function Comment({ name, text }) {
   return (
     <div>
-      <p className={css.comment}>{name} Says:</p>
-      <p className={css.comment}>{text}</p>
+      <p data-testid="commentname" className={css.comment}>
+        {name} Says:
+      </p>
+      <p data-testid="comment"  className={css.comment}>
+        {text}
+      </p>
     </div>
   );
 }
