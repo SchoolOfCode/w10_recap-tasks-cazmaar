@@ -17,7 +17,7 @@ function Display() {
       {articles.map((article) => {
         return (
           <div key={article.id}>
-            <ParagraphTitle title={article.title} />
+            <ParagraphTitle data-testid="paragraph" title={article.title} />
             {article.paragraphs.map((paragraph) => {
               return <Paragraph key={paragraph.id} text={paragraph.text} />;
             })}
