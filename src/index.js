@@ -13,11 +13,9 @@ ReactDOM.render(
     <Auth0Provider
       domain={domain}
       clientId={clientId}
-      redirectUri="https://awesome-kepler-57ad1d.netlify.app/article"
+      redirectUri={window.location.origin}
     >
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <App />
     </Auth0Provider>
   </React.StrictMode>,
   document.getElementById("root")
