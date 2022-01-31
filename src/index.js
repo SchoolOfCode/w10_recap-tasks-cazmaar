@@ -7,14 +7,14 @@ import { Auth0Provider } from "@auth0/auth0-react";
 import { BrowserRouter } from "react-router-dom";
 const domain = process.env.REACT_APP_DOMAIN;
 const clientId = process.env.REACT_APP_CLIENT_ID;
-const redirectUri = process.env.REACT_APP_REDIRECTURI;
+
 
 ReactDOM.render(
   <React.StrictMode>
     <Auth0Provider
       domain={domain}
       clientId={clientId}
-      redirectUri={redirectUri}
+      redirectUri="http://localhost:3000/article"
     >
       <BrowserRouter>
         <App />
