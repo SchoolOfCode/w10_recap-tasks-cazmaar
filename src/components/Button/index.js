@@ -13,7 +13,11 @@ function Button() {
 
   return (
     <div>
-      <button onClick={AddLikes} className={css.likeButton}>
+      <button
+        data-testid="button"
+        onClick={AddLikes}
+        className={css.likeButton}
+      >
         {likes} Likes 👍
       </button>
     </div>
